@@ -1,0 +1,37 @@
+a, a:hover {
+  color: #0089ff;
+}
+.intro-section {
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.9),
+      rgba(0,0,0,0.2)),
+    url(../images/george-washington.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+}
+
+.contact-section {
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.9),
+      rgba(0,0,0,0.2)),
+    url(../images/old-map.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-attachment: fixed;
+  color: white;
+  background-position: center;
+}
+.tinted-box {
+  background-color: rgba(0,0,0,0.8);
+  padding: 30px;
+}
+
+.navbar-brand img {
+    height: 100%;
+    display: inline;
+}

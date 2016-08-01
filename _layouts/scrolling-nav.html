@@ -16,6 +16,18 @@
 
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/scrolling-nav-custom.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/images/favicons/manifest.json">
+    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#67a2b3">
+    <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,7 +52,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">{{ site.title }}</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="images/cac-emblem-blue.png" alt="Conservative Americans Club Emblem"/> {{ site.title }}</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,7 +66,10 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#membership">Membership</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#events">Events</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -71,8 +86,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Scrolling Nav</h1>
-                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
+                    <h1>Conservative Americans Club</h1>
+                    <p>"It is impossible to rightly govern the world without <strong>God and Bible</strong>."</p>
+                    <p><i>- George Washington</i></p>
                     <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
                 </div>
             </div>
@@ -84,18 +100,67 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>About Section</h1>
+                    <h1>About Us</h1>
+                    <p>
+                      The Conservative Americans Club meets on the fourth Thursday of every month with special guest speakers and hosted by Ginny Wade.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services-section">
+    <section id="membership" class="services-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Services Section</h1>
+                    <h1>Become a member</h1>
+                    <form action="https://formspree.io/wadeginny@aol.com" method="POST">
+
+                          <fieldset class="form-group">
+                            <input type="text" name="name" placeholder="Name" class="form-control">
+                          </fieldset>
+
+                          <fieldset class="form-group">
+                            <input type="email" name="_replyto" placeholder="Email" class="form-control">
+                          </fieldset>
+                          <fieldset class="form-group">
+                            <input type="text" name="phone" placeholder="Phone" class="form-control">
+                          </fieldset>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios1" value="Individual" checked>
+                              $25 Individual
+                            </label>
+                          </div>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios2" value="Family">
+                              $45 Family
+                            </label>
+                          </div>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios2" value="College">
+                              $15 College
+                            </label>
+                          </div>
+
+
+                      <input type="submit" value="Send" class="btn btn-primary">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="events" class="contact-section tinted-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Events</h1>
+                    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=zachdyerdesign.com_jia6ld6t1pn9tv0o1qri0j831g%40group.calendar.google.com&amp;color=%230F4B38&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
                 </div>
             </div>
         </div>
@@ -105,8 +170,25 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>Contact Section</h1>
+                <div class="col-lg-12 tinted-box">
+                    <h1>Contact Us</h1>
+                    <p>
+                      <span class="glyphicon glyphicon-envelope" aria-hidden="true" alt="Email"></span> <a href="mailto:wadeginny@aol.com">wadeginny@aol.com</a>
+                    </p>
+                    <p>
+                      <span class="glyphicon glyphicon-earphone" aria-hidden="true" alt="Email"></span> <a href="tel:+1 417 634 0165 ">+1 417 634 0165</a>
+                    </p>
+                    <p>
+                      <span class="glyphicon glyphicon-map-marker" aria-hidden="true" alt="Address"></span> <a href="https://www.google.com/maps/place/404+Massey+Blvd,+Nixa,+MO+65714/@37.0380632,-93.3041917,17z/data=!3m1!4b1!4m5!3m4!1s0x87cf6f01bf52fd51:0xe259f60bd2e3562f!8m2!3d37.0380589!4d-93.302003" target="_blank">404 Massey Blvd, Nixa, MO</a>
+                    </p>
+                    <p>
+                      <span class="glyphicon glyphicon-time" aria-hidden="true" alt="Hours"></span>
+                      Hours Open:<br>
+                      Tuesday, Wednesday, Thursday <br>
+                      10:00 am - 6:00 pm <br>
+                      Saturday 10:00 am - 1:00 pm <br>
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3184.8147478288106!2d-93.30419168448677!3d37.03806316197319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87cf6f01bf52fd51%3A0xe259f60bd2e3562f!2s404+Massey+Blvd%2C+Nixa%2C+MO+65714!5e0!3m2!1sen!2sus!4v1468440270471" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
